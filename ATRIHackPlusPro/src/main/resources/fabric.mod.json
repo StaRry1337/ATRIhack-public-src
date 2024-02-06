@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "atrihack",
+  "version": "${version}",
+  "name": "ATRIHack",
+  "description": "Epik cheetos addon.",
+  "authors": [
+    "Two_C1_Yuan",
+    "Best_IQ"
+  ],
+  "contact": {
+    "repo": "https://github.com/KassuK1/BlackOut/",
+    "discord": "https://discord.com/invite/mmWz9Dz4Y9"
+  },
+  "icon": "assets/atrihack/logo.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "tcy.addon.atrihack.ATRIHack"
+    ]
+  },
+  "mixins": [
+    "atrihack.mixins.json"
+  ],
+  "accessWidener": "atrihack.accesswidener",
+  "custom": {
+    "meteor-client:color": "225,25,25"
+  },
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=${mc_version}",
+    "meteor-client": "*"
+  }
+}
